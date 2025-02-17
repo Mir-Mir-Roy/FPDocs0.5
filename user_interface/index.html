@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Viewport interface - Friendly Pivot Addon Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="../css/theme.css" />
+  <link rel="stylesheet" href="../css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Viewport interface";
+    var mkdocs_page_input_path = "user_interface.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="../js/jquery-2.1.1.min.js" defer></script>
+  <script src="../js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href=".." class="icon icon-home"> Friendly Pivot Addon Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../changes/">Changes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../quick_start/">Quick Start</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="./">Viewport interface</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#interface">Interface</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tool-header-area-breakdown">Tool header area breakdown</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#help-menu-status-bar">Help menu &amp; Status Bar</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#gizmos">Gizmos</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#preview">Preview</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#pivot">Pivot</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#bounding-box">Bounding Box</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modes">Modes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#mesh">Mesh</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#armature">Armature</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#curve">Curve</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#additional-modes">Additional Modes</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#multiselect">Multiselect</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aim-to-component">Aim To Component</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#combos">Combos</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#options-menu">Options menu</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../viewport_shortcuts/">Viewport shortcuts</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../uveditor_shortcuts/">UV Editor shortcuts and usage</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="../preferences/">Preferences</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="..">Friendly Pivot Addon Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="..">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Viewport interface</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="viewport-interface">Viewport interface</h1>
+<p>This version of addon contains UI. All tool icons located in top tool header area
+while the addon invoked. This gives ability to select or track current modes, actions. 
+Together with conform mouse actions it makes addon easy to use.<br></p>
+<h2 id="interface">Interface</h2>
+<p>Friendly Pivot addon can be invoked from Toolbar panel(T-panel) by pressing <img alt="" src="../img/toolbar_icon.jpg" /> icon or by <strong>'D'</strong> shortcut.<br>
+<img alt="" src="../img/interface.png" /><br></p>
+<h2 id="tool-header-area-breakdown">Tool header area breakdown</h2>
+<p><img alt="" src="../img/tool_header.png" /></p>
+<h2 id="help-menu-status-bar">Help menu &amp; Status Bar</h2>
+<p>This menu icon <img alt="" src="../img/help_icon.jpg" /> contains Manual, Support buttons, Shortcuts memo(switched off by default) and addon version number.
+Manual button leads to the addon documentation page, Support one - to discord bug reporting and supporting channel. Shortcuts memo has
+full list of the addon's keys. Also while FP is active Status Bar shows main shortcuts too.<br>
+<img alt="" src="../img/help_menu.png" /><br></p>
+<h2 id="gizmos">Gizmos</h2>
+<h3 id="preview">Preview</h3>
+<p>Switch icon <img alt="" src="../img/preview_icon.jpg" />. Default shortcut - <strong>'P'</strong>.
+This gizmo shows highlighted component's normal orientation. It works with Mesh, Armature and Curve modes. <br>
+<img alt="" src="../img/gif_preview.gif" /><br></p>
+<h3 id="pivot">Pivot</h3>
+<p>This gizmo gives ability to set Orientation and Origin freely. Supports any Blender object type. Dial(Orientation) and Arrows(Origin) 
+controls can be shown together or separate by switching these <img alt="" src="../img/pivot_icons.jpg" /> icons. Other way is pressing <strong>O</strong>(Orientation) or <strong>I</strong>(Origin) shortcuts. There is a value counting Pivot's distance(<strong>'D + axis'</strong>) when dragging the gizmo or current rounded value(<strong>'V + axis'</strong>) when rounding value.<br>
+<img alt="" src="../img/gif_Pivot_gizmo.gif" /></p>
+<p><strong>Pressing Alt</strong> while dragging rounds current axis value to whole number. <strong>Alt + Shift</strong> combination rounds value to first decimal 
+value for better accuracy. For Dial Pivot gizmo value is being round to nearest whole number automatic(if 1.45 =&gt; 1.0, if 1.55 =&gt; 2.0). 
+Current rounded value is being display in the left bottom corner with V character.
+<img alt="" src="../img/gif_Pivot_gizmo_alt.gif" /></p>
+<p><strong>Press Shift</strong>, <strong>Ctrl</strong> or <strong>Shift+Crtl</strong> - Activate incremental system for current axis while dragging pivot gizmo.
+<img alt="" src="../img/gif_Pivot_gizmo_incr.gif" /></p>
+<h3 id="bounding-box">Bounding Box</h3>
+<p>With this gizmo user can set 3D Cursor or Origin to bounding box points around selected object.
+To activate Bbox gizmo press <strong>B</strong> key or use this <img alt="" src="../img/bbox_icon.jpg" /> icon in top tool header. To select desire object press
+<strong>LMB</strong> on it while bbox is activeThis selection works only for mesh type objects for now. Other type objects like bones, curves
+need to be selected before addon invoked.<br></p>
+<p>There are two transform spaces: world(default) and local. Local can be switched on by rotated box <img alt="" src="../img/bbox_local_icon.jpg" />
+icon that is active while Bbox gizmo is on.<br>
+<strong>!WARNING - World space is heavy calculation with hipoly meshes</strong><br>
+<img alt="" src="../img/gif_bbox.gif" /></p>
+<h2 id="modes">Modes</h2>
+<p>Addons modes were designed to differentiate some Blender object types and work with them separately. Current version of the tool contains 3 modes: Mesh, Armature and Curves.
+They all works in local view but only with selected objects instead of basic view where all visible objects can be raycasted by the addon.</p>
+<h3 id="mesh">Mesh</h3>
+<p>To activate it press <img alt="" src="../img/mesh_mode_icon.jpg" /> icon or <strong>M</strong> shortcut. This is the main mode for the addon that filters only mesh type objects in a scene. 
+<img alt="" src="../img/gif_mesh_mode.gif" /> </p>
+<h3 id="armature">Armature</h3>
+<p>Main key is <strong>A</strong> or <img alt="" src="../img/armature_mode_icon.jpg" /> icon. This mode relates to armatures presented in a scene and can sample orientation and positions of head,
+end, in-between area of each visible bone. 
+<img alt="" src="../img/gif_bone_mode.gif" /></p>
+<h3 id="curve">Curve</h3>
+<p>Invoke key is <strong>C</strong> ot this <img alt="" src="../img/curve_mode_icon.jpg" /> icon. In this mode user can set mainly 3D Cursor, Origin and Orientation(only with Aim and/or Multiselect modes) to curve's points. 
+<img alt="" src="../img/gif_curve_mode.gif" /></p>
+<h2 id="additional-modes">Additional Modes</h2>
+<p>These modes extend basic addon functionality by ability to sample more than one component and get their average orientation and position in a scene or change 
+addon's behavior to rotating pivot to highlighted components instead of sampling local normals.</p>
+<h3 id="multiselect">Multiselect</h3>
+<p>This mode designed to set Orientation, 3D Cursor and Origin between selected components of one object or multi ones by averaging selected components
+orientations and positions. To activate use <strong>S</strong> key or <img alt="" src="../img/multiselect_icon.jpg" /> icon. To conform selection - press them again. To select components 
+user can use any mouse action(LMB,MMB,RMB) but only last action is used to execute certain type of conform.
+For example if last action was LMB the addon would set Orientation as main conform with respect of active combos.<br></p>
+<p>Basic shortcuts:<br>
+* <strong>Press S</strong> - To activate multi selection.<br>
+* <strong>LMB</strong>,  <strong>MMB</strong>, <strong>RMB</strong> - Select components<br>
+* <strong>Press S</strong> - To exit from the mode with or without comforms if no selected components<br>
+* <strong>Press R</strong> - Deselect all components.<br></p>
+<p><img alt="" src="../img/gif_multi_selection.gif" /></p>
+<h3 id="aim-to-component">Aim To Component</h3>
+<p><strong>X</strong> shortcut or this <img alt="" src="../img/aim_icon.jpg" /> left icon switch on/off the mode that changes default orientation conform to aiming from existed pivot
+position to highlighted component or multiselected components' center by default X axis.
+<img alt="" src="../img/gif_aim.gif" /></p>
+<p>Axis can be selected from dropdown menu while Aim mode is active.<br>
+<img alt="" src="../img/aim_axis_icon.jpg" /></p>
+<p>Also aim mode works with multiselect one.
+<img alt="" src="../img/gif_multiselect_aim.gif" /></p>
+<h2 id="combos">Combos</h2>
+<p>Active combos simplify few conforms to one action and can be controlled from top tool header <img alt="" src="../img/combos_icon.jpg" /> icons or shortcuts:<br>
+* <strong>Q</strong> - Orientation combo On/Off<br>
+* <strong>W</strong> - 3D Cursor combo On/Off<br>
+* <strong>E</strong> - Origin combo On/Off<br>
+<img alt="" src="../img/gif_combos.gif" /></p>
+<h2 id="options-menu">Options menu</h2>
+<p>Drop-down menu button <img alt="" src="../img/options_icon.jpg" /> contains some additional control options that have no shortcuts and can be activated when the addon performs conform:
+<img alt="" src="../img/options_menu.png" /></p>
+<ul>
+<li><strong>Set SCPO To Transform Tools</strong> - Every Blender tool like Move, Rotate, Scale and Transform has its own active orientation slot. The addon sets custom
+orientation to these slots.
+<img alt="" src="../img/options_menu_transforms.jpg" /></li>
+<li><strong>Bake SCPO To Local</strong> - Bakes custom orientation to LOCAL one for selected objects.</li>
+<li><strong>Set Pivot To 3D Cursor</strong> - Set Trasform Pivot Point to 3D Cursor.</li>
+<li><strong>XYZ</strong> - This command helps to set all three axis or selected ones only before or after conform. Works only for Origin and 3D Cursor.
+<img alt="" src="../img/gif_options_menu_xyz.gif" /><br></li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="../viewport_shortcuts/" class="btn btn-neutral float-right" title="Viewport shortcuts">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="../quick_start/" class="btn btn-neutral" title="Quick Start"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="../quick_start/" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="../viewport_shortcuts/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js" defer></script>
+      <script src="../search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

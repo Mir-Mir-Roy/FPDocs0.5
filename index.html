@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="None">
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Friendly Pivot Addon Documentation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700" />
+
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Home";
+    var mkdocs_page_input_path = "index.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> Friendly Pivot Addon Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href=".">Home</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#features">Features</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requirements">Requirements</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#latest-version">Latest version</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#installation">Installation</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#from-get-extension-preference-tab">From "Get Extension" Preference tab</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#from-add-ons-preference-tab">From "Add-ons" Preference tab</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#quick-usage">Quick usage</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#contact">Contact</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="changes/">Changes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="quick_start/">Quick Start</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="user_interface/">Viewport interface</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="viewport_shortcuts/">Viewport shortcuts</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="uveditor_shortcuts/">UV Editor shortcuts and usage</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="preferences/">Preferences</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">Friendly Pivot Addon Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Home</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="friendly-pivot-addon-documentation">Friendly Pivot Addon Documentation</h1>
+<p><img alt="" src="img/promo_1200x600.png" /></p>
+<p><strong>Friendly Pivot</strong> addon mimics most functionalities of Autodesk Maya Pivot Transform tool with minor differences, 
+improvements and updates suitable for Blender. It's main task is to quickly and conveniently change the Pivot Orientation, 
+Origin and 3D Cursor positions by pressing fewer keys, eliminating the need to select the desired component of a mesh, 
+bone or curve point and long travel through different menus to change Blender pivot. </p>
+<p>Just press D button, hover cursor mouse above highlighted component and click LMB, MMB or RMB to change pivot.
+Or use Pivot gizmo to move Origin in 3D space or set custom pivot orientation. Both are with incremental system. </p>
+<p>In addition Bbox gizmo helps adjust Origin and 3D cursor selected object's boundaries.<br></p>
+<p>It’s available on
+ <a href="https://gum.co/friendlypivot"><strong>Gumroad</strong></a>
+ <a href="https://www.blendermarket.com/products/friendly-pivot"><strong>Blender Market</strong></a></p>
+<p><a href="https://youtu.be/7ISqzy9azdc">! <strong>Video Intro</strong></a></p>
+<p><a href="https://youtu.be/EDfpUyTQJG8">! <strong>Current version update's video</strong></a></p>
+<h2 id="features">Features</h2>
+<ul>
+<li>Easy change Pivot orientations.<br></li>
+<li>Easy change Origin positions.<br></li>
+<li>Easy change 3D Cursor orientation and position.<br></li>
+</ul>
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li>Blender <strong>4.2</strong> or higher.</li>
+</ul>
+<h2 id="latest-version">Latest version</h2>
+<p>The latest version of <strong>Friendly Pivot Addon</strong> is <strong>0.5.0</strong>.<br></p>
+<h2 id="installation">Installation</h2>
+<p>It's recommended to remove previously installed addon before the installation!</p>
+<h3 id="from-get-extension-preference-tab">From "Get Extension" Preference tab</h3>
+<ul>
+<li>Start Blender, then <strong>Edit</strong> → <strong>User Preferences</strong> → <strong>Get Extensions</strong> tab,<br></li>
+<li>Press <strong>'Install from Disk'</strong> command in <strong>Extension settings</strong> dropdown menu (down-arrow icon located in upper right area of <strong>Get Extensions</strong> tab),<br></li>
+<li>Locate and select downloaded <strong>friendly_pivot</strong> zip file,<br></li>
+<li>Activate the addon,  <strong>save user settings</strong>,<br></li>
+<li>Close preferences.<br></li>
+</ul>
+<h3 id="from-add-ons-preference-tab">From "Add-ons" Preference tab</h3>
+<ul>
+<li>Start Blender, then <strong>Edit</strong> → <strong>User Preferences</strong> → <strong>Add-ons</strong> tab,<br></li>
+<li>Press <strong>'Install from Disk'</strong> command in <strong>Add-ons settings</strong> dropdown menu (down-arrow icon located in upper right area of <strong>Add-ons</strong> tab),<br></li>
+<li>Locate and select downloaded <strong>friendly_pivot</strong> zip file,<br></li>
+<li>Activate the addon,  <strong>save user settings</strong>,<br></li>
+<li>Close preferences.<br></li>
+</ul>
+<h2 id="quick-usage">Quick usage</h2>
+<p>Select object, press <strong>D</strong> (default invoke key, <strong>changeable</strong>) or activate Friendly Pivot Tool in Blender toolbar then hover mouse cursor above necessary and highlighted component then:<br>
+* Press <strong>LMB</strong> to set new Pivot Transform Orientation or<br>
+* Press <strong>RMB</strong> to set new Origin position or<br>
+* Press <strong>MMB</strong> to set 3d Cursor orientation and position.<br>
+For more actions and modes see the addon's manual.<br></p>
+<h2 id="contact">Contact</h2>
+<p>The addon is in <strong>BETA</strong> and works well but could be errors.
+If there is an existed one, please report a bug by pressing <strong>Support</strong> button in dropdown menu(upper left FP icon) while Friendly Pivot addon is active in main Blender viewport. <br>
+ <!-- or --></p>
+<!-- pressing **Support** button in the addon's preference window. -->
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="changes/" class="btn btn-neutral float-right" title="Changes">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+      
+        <span style="margin-left: 15px"><a href="changes/" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2025-02-17 17:34:10.147669+00:00
+-->
